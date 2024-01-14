@@ -30,10 +30,11 @@
 
 .terminal .main-terminal {
     background-color: black;
-    color: lightgreen;
+    color: rgb(0, 164, 0);
     height: 95%;
     width: 100%;
     position: sticky;
-    font-family: Lucida Console;
-    overflow-y: scroll;
+    font-family: Lucida Sans Typewriter;
+    overflow-y: auto;
+    overflow-wrap: break-word;
 }
