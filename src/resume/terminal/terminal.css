@@ -1,0 +1,39 @@
+.terminal {
+    width: 90vw;
+    height: 60vh;
+    margin: auto;
+    transform: translateY(5%);
+}
+
+.terminal .terminal-top{
+    position: sticky;
+    height: 5%;
+    width: 100%;
+    background-color: rgb(76, 76, 76);
+}
+
+.terminal .terminal-top .bar-button{
+    height: 100%;
+    width: 3%;
+    float: right;
+    text-align: center;
+    color: white;
+}
+
+.terminal .terminal-top .close:hover{
+    background-color: rgba(139, 0, 0, 0.712);
+}
+
+.terminal .terminal-top .change-size:hover{
+    background-color: rgba(219, 219, 219, 0.425);
+}
+
+.terminal .main-terminal {
+    background-color: black;
+    color: lightgreen;
+    height: 95%;
+    width: 100%;
+    position: sticky;
+    font-family: Lucida Console;
+    overflow-y: scroll;
+}

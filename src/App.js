@@ -1,25 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import Resume from './resume';
 
-function App() {
+export default function App() {
+
+  // this is my makeshift router since GH pages only allows single page applications :)
+
+  let params = new URLSearchParams(window.location.search)
+  let site = params.get('site')
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="App">
+      <Resume />
     </div>
   );
 }
-
-export default App;
