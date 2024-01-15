@@ -1,5 +1,6 @@
 import { Component } from "react"
 import './resume.css'
+import Resume_text from "./resume_text"
 
 export default class Resume_Comp extends Component{
 
@@ -9,33 +10,6 @@ export default class Resume_Comp extends Component{
         wait_time: parseInt(this.props.wait_time) || 3000,
         become_seen: this.props.become_seen || false,
     }
-
-    resume_text = [
-        {title: "Education", sub_title: "UMD, Dartmouth, MA", bullets: [
-            {bullet: "BS in Computer Science", details: ""},
-            {bullet: "Minor in Mathematics", details: ""},
-            {bullet: "MS in Computer Science", details: ""}
-        ]},
-        {title: "Skills", bullets: [
-            {bullet: "Languages: C, C++, Java, JavaScript, Python, Elixir, HTML, CSS", details: ""},
-            {bullet: "Libraries: React.js, Chart.js, jQuery, and Ajax.js, Phoenix framework for Elixir", details: ""},
-            {bullet: "Environments: Eclipse, Visual Studio Code", details: ""}
-        ]},
-        {title: "Academia", bullets: [
-            {bullet: "Deep learning methods for image classification", details: "Nov. 2019 - Mar. 2020", sub_bullet: [
-                "Developed deep learning neural network utilizing C programming language to achieve maximum flexibility in net architecture."
-            ]},
-            {bullet: "Storage of Machine Learning models on decentralized systems", details: "whatever time i was working on my thesis"}
-        ]},
-        {title: "Experience", bullets: [
-            {bullet: "Internship at Loomis Sayles", details: "Summers of 2018 - 2022", sub_bullet: [
-                "Both paid and unpaid internships where I lead a team of interns.",
-                "During COVID, transfered to online rather than in-office",
-                "Full-stack web development utilizing Java, Javascript, HTML, Elixir, and the frameworks of React.JS and Pheonix"
-            ]},
-            {bullet: "Storage of Machine Learning models on decentralized systems", details: "whatever time i was working on my thesis"}
-        ]},
-    ]
 
     render() {
 
@@ -54,8 +28,8 @@ export default class Resume_Comp extends Component{
         if(this.state.become_seen)
             return (
             <div className="resume" style={{opacity: this.state.opacity}}>                
-                {this.resume_text && <table><tbody>
-                    {this.resume_text.map((e) => {
+                {Resume_text && <table><tbody>
+                    {Resume_text.map((e) => {
                         return (<div>
                             {e.title && <tr><td className="title-point-buffer"></td><td className="title-point wrap">{e.title}</td><td></td></tr>}
                             {e.sub_title && <tr><td className="sub-title-point-buffer"></td><td className="sub-title-point wrap">{e.sub_title}</td><td></td></tr>}
