@@ -1,8 +1,8 @@
 .terminal {
     width: 90vw;
     height: 60vh;
-    margin: auto;
-    transform: translateY(5%);
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 .terminal .terminal-top{
@@ -34,7 +34,21 @@
     height: 95%;
     width: 100%;
     position: sticky;
-    font-family: Lucida Sans Typewriter;
+    font-family: Lucida Console;
     overflow-y: auto;
     overflow-wrap: break-word;
 }
+
+.terminal .cmd-input {
+    background-color: black;
+    width: 50%;
+    color: rgb(0, 164, 0);
+    font-family: Lucida Console;
+    font-size: inherit;
+    border: 0;
+}
+
+.terminal .cmd-input:focus {
+    outline: none;
+}
+

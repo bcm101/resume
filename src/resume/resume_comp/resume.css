@@ -1,0 +1,35 @@
+
+.resume {
+    /* background-color: blue; */
+    height: 100vh;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.resume .title-point {
+    width: 70vw;
+    font-weight: bolder;
+}
+
+.resume .bullet {
+    width: 67vw;
+}
+
+.resume .sub-title-point {
+    font-style: italic;
+}
+
+.resume .details {
+    width: 10vw;
+    font-style: italic;
+    text-wrap:nowrap;
+}
+
+.resume .bullet-buffer {
+    width: 3vw;
+}
+
+.resume .sub-bullet-buffer {
+    width: 5vw;
+}

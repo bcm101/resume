@@ -1,0 +1,11 @@
+
+
+.resume-page {
+    height: 100vh;
+}
+
+.resume-contents {
+    background-color: beige;
+    transform: translateY(5vh);
+}
+
