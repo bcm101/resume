@@ -44,6 +44,7 @@ export default class Resume_Comp extends Component{
                         </div>)
                     })}
                 </tbody></table>}
+                <div className='end-page-buffer'></div>
             </div>
             )
         
