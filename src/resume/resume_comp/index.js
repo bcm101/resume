@@ -28,22 +28,22 @@ export default class Resume_Comp extends Component{
         if(this.state.become_seen)
             return (
             <div className="resume" style={{opacity: this.state.opacity}}>                
-                {Resume_text && <table><tbody>
-                    {Resume_text.map((e) => {
-                        return (<div>
-                            {e.title && <tr><td className="title-point-buffer"></td><td className="title-point wrap">{e.title}</td><td></td></tr>}
-                            {e.sub_title && <tr><td className="sub-title-point-buffer"></td><td className="sub-title-point wrap">{e.sub_title}</td><td></td></tr>}
-                            {e.bullets.map((b) => {
-                                return (<div>
-                                    <tr className="bullet-row"><td className="bullet-buffer"></td><td className="bullet wrap">{b.bullet}</td><td className="details">{b.details}</td></tr>
-                                    {b.sub_bullet && b.sub_bullet.map((sb) => {
-                                        return <div><tr className="bullet-row"><td className="sub-bullet-buffer"></td><td className="sub-bullet wrap"><li>{sb}</li></td><td></td></tr></div>
+                {Resume_text && <div>
+                    {Resume_text.map((e, i) => {
+                        return (<div key={i}>
+                            {e.title && <table key={`title-${i}`}><tbody><tr><td className="title-point-buffer"></td><td className="title-point wrap">{e.title}</td><td></td></tr></tbody></table>}
+                            {e.sub_title && <table key={`sub-title-{i}`}><tbody><tr><td className="sub-title-point-buffer"></td><td className="sub-title-point wrap">{e.sub_title}</td><td></td></tr></tbody></table>}
+                            {e.bullets.map((b, j) => {
+                                return (<div key={`bullet-${j}`}>
+                                    <table><tbody><tr className="bullet-row"><td className="bullet-buffer"></td><td className="bullet wrap">{b.bullet}</td><td className="details">{b.details}</td></tr></tbody></table>
+                                    {b.sub_bullet && b.sub_bullet.map((sb, k) => {
+                                        return <table key={`sub-bullet-${k}`}><tbody><tr className="bullet-row"><td className="sub-bullet-buffer"></td><td className="sub-bullet wrap"><li>{sb}</li></td><td></td></tr></tbody></table>
                                     })}
                                 </div>)
                             })}
                         </div>)
                     })}
-                </tbody></table>}
+                </div>}
                 <div className='end-page-buffer'></div>
             </div>
             )
