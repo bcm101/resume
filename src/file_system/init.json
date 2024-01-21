@@ -1,0 +1,24 @@
+[
+    {"path": ["~"], "data": [
+        {"name": "Projects", "type": "folder"},
+        {"name": "Apps", "type": "folder"},
+        {"name": "Academia", "type": "folder"},
+        {"name": "BMW_Resume.txt", "type": "file"}
+    ]},
+    {"path": ["~", "Projects"], "data": [
+        {"name": "resume_site.txt", "type": "file"},
+        {"name": "VR_submarine.txt", "type": "file"},
+        {"name": "map_of_crimes_in_Chicago.txt", "type": "file"},
+        {"name": "discord_TTS_bot.txt", "type": "file"}
+    ]},
+    {"path": ["~", "Apps"], "data": [
+        {"name": "maze_maker.html", "type": "file"},
+        {"name": "cross_word_maker.html", "type": "file"},
+        {"name": "word_randomizer.html", "type": "file"},
+        {"name": "README.md", "type": "file"}
+    ]},
+    {"path": ["~", "Academia"], "data": [
+        {"name": "thesis.txt", "type": "file"},
+        {"name": "MLP.txt", "type": "file"}
+    ]}
+]

@@ -5,6 +5,7 @@
     margin-right: 5vw;
     border-radius: 10px;
     overflow: hidden;
+    transform: translateY(5vh);
 }
 
 .terminal .terminal-top{
@@ -43,14 +44,34 @@
 
 .terminal .cmd-input {
     background-color: black;
-    width: 50%;
+    width: 60%;
     color: rgb(0, 164, 0);
     font-family: Lucida Console;
     font-size: inherit;
     border: 0;
+    height: 100%;
 }
 
 .terminal .cmd-input:focus {
     outline: none;
 }
 
+.terminal .folder {
+    color: lightskyblue;
+}
+
+.terminal .file {
+    color: lightcoral;
+}
+
+.terminal .command-output-error {
+    color: crimson;
+}
+
+.terminal .opening-new-site {
+    color: yellow;
+}
+
+.terminal .opened-file {
+    color: darkcyan;
+}
