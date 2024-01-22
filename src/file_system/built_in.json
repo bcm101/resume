@@ -31,7 +31,7 @@
         {"line":" ", "remove_spaces": false, "className": "opened-file"},
         {"line":"Github pages only allows for single-page applications, so the complexity of the project is naturally limited. Despite that, I feel this project is something I can be proud of and I hope if you are reading this you appreciate the around ~2 weeks of work that went in to this.", "remove_spaces": true, "className": "opened-file"},
         {"line":" ", "remove_spaces": false, "className": "opened-file"},
-        {"line":"site", "remove_spaces":false, "className": "opened-file", "link": "http://localhost:3000/resume?no_open_resume=true"},
+        {"line":"site", "remove_spaces":false, "className": "opened-file", "link": "https://bcm101.github.io/resume/?no_open_resume=true"},
         {"line":"github", "remove_spaces":false, "className": "opened-file", "link": "https://github.com/bcm101/resume"},
         {"line":" ", "remove_spaces": false, "className": "opened-file"}
     ],

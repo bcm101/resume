@@ -249,14 +249,15 @@ export default class FileSystem {
 
         if(!file){
             const fileKeyStr = fileKey.flat(1).join('/')
-            if(builtIn[fileKeyStr] && (await this.accessPath(path)).find(f => f.name === fileName))
-
+            if(builtIn[fileKeyStr] && (await this.accessPath(path)).find(f => f.name === fileName)){
                 if(typeof builtIn[fileKeyStr] === "string"){
                     const getContents = require("./"+builtIn[fileKeyStr])
                     return getContents().split('\n')
                 }
 
                 return builtIn[fileKeyStr]
+            }
+ 
         }
         
         return file
