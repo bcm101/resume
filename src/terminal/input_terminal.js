@@ -2,6 +2,7 @@ import { Component } from "react";
 import Typing from "./typing";
 import Commands from "./commands";
 import FileSystem from "../file_system";
+import '../util'
 
 export default class InputTerminal extends Component {
     
@@ -18,15 +19,22 @@ export default class InputTerminal extends Component {
         prompt: this.props.prompt || "",
         current_output: [],
         prev_outputs: [],
-        FS: this.props.fileSystem || new FileSystem()
+        FS: this.props.fileSystem || new FileSystem(),
+        onMobile: window.mobileAndTabletCheck()
     }
 
     print(arr, show_animation) {
+        let ji = 0;
         return arr.map((d, j) => {
+            if(d.no_render_mobile && this.data.onMobile){
+                ji++;
+                return;
+            }
+
             return <Typing 
                 string={d.line}
                 show_animation={show_animation}
-                time_before_typing={j*40}
+                time_before_typing={j*40 - ji * 40}
                 speed="5"
                 key={j}
                 purge_multiple_spaces={d.remove_spaces}

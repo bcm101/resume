@@ -41,7 +41,6 @@ export default class App extends Component{
         });
       }
 
-      // document.getElementById('page').innerHTML = (await FS.openFile(fileName, path))?.join(' ')
       const fileText = (await FS.openFile(fileName, path))
       if(fileText){
         const processed = fileText.map((o) => {
