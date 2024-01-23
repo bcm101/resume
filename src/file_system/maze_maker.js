@@ -49,6 +49,11 @@ const str = `<head>
             const imgElm = document.getElementById("maze-image");
             imgElm.style.position = "static";
             window.print();
+            document.getElementById("options").hidden = false;
+            document.getElementById("generate").hidden = false;
+            document.getElementById("print-screen").hidden = false;
+            document.getElementById("maze").hidden = true;
+            imgElm.style.position = "fixed";
         };
         const generate=()=>{
             const cssXElm = document.getElementById("css-X");
@@ -274,7 +279,7 @@ const str = `<head>
             const img = canvas.toDataURL('image/png');
             const imgElm = document.getElementById("maze-image");
             imgElm.src = img;
-            imgElm.hidden = false;
+            imgElm.style.opacity = "100%";
             const body = document.body, html = document.documentElement;
             const pageWidth = Math.max(body.scrollWidth, body.offsetWidth, html.clientWidth, html.scrollWidth, html.offsetWidth);
             const pageHeight = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
@@ -286,7 +291,7 @@ const str = `<head>
             canvas.hidden = true;
             if(document.getElementById("raw").checked){
                 canvas.hidden = false;
-                imgElm.hidden = true;
+                imgElm.style.opacity = "0%";
             }
         }
     </script>

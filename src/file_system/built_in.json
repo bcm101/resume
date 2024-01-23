@@ -23,6 +23,8 @@
         {"line": "As described using the help command, a file can be opened using the command 'cat'", "remove_spaces": true, "className": "opened-file"},
         {"line": "In order to open that file as a website, use and optional argument [-s] to open that file as another site", "remove_spaces":true, "className": "opened-file"},
         {"line": "Here is an example command: 'cat maze_maker.html -s'", "remove_spaces":true, "className": "opened-file"},
+        {"line": " ", "remove_spaces": false, "className": "opened-file"},
+        {"line": "Why did I make these apps? Well, simply my sister and mother are both school teachers and I enjoy making things that they will find useful. These mini apps aren't meant to be anything remarkable, but they are simply supposed to serve a purpose and fulfill a niche that my specific family seems to need. Also, much like everything else on this resume, I want to create things that show off my skillset. If I can do that while also creating something useful, then I have done enough. Everything here is owned by Brandon Wetzel, but if someone else is desperately in need of a way to create a maze or word search in a browser then feel free to take some of the code.", "remove_spaces": true, "className": "opened-file"},
         {"line": " ", "remove_spaces": false, "className": "opened-file"}
     ],
     "~/Projects/resume_site.txt": [
@@ -70,8 +72,9 @@
     ],
     "~/Academia/MLP.txt": [
         {"line":" ", "remove_spaces": false, "className": "opened-file"},
-        {"line":"I was scouted by a professor, Doctor Valova at UMD, to do perform classifications on images using deep learning models. I developed a Multilayer Perceptron model using the C programming language for maximum efficiency. My math minor came in handy as I was  able to derive the algorithms required using calculus to deepen my understanding and further increase efficiency.", "remove_spaces": true, "className": "opened-file"},
+        {"line":"I was scouted by a professor, Doctor Valova at UMD, to perform classifications on images using deep learning models. I developed a Multilayer Perceptron model using the C programming language for maximum efficiency. My math minor came in handy as I was  able to derive the algorithms required using calculus to deepen my understanding and further increase efficiency with my research. This research was unfortunately cut short due to COVID.", "remove_spaces": true, "className": "opened-file"},
         {"line":" ", "remove_spaces": false, "className": "opened-file"}
     ],
-    "~/Apps/maze_maker.html": "maze_maker"
+    "~/Apps/maze_maker.html": "maze_maker",
+    "~/Apps/word_search_maker.html": "word_search_maker"
 }

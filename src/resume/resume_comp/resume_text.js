@@ -39,7 +39,9 @@ let Resume_text = [
     {title: "Projects", sub_title: "View more and in more detail through the linux terminal above!", bullets: [
         {bullet: "Resume Site", details: "Jan. 2024", sub_bullet: [
             'The website you see before you now!',
-            "Hosted by Github pages and made using React.JS"
+            "Hosted by Github pages and made using React.JS",
+            "File storage system is made using IndexedDB.",
+            "Try running the command 'help' or 'ls' or 'rm BMW_Resume.txt' for a start",
         ]},
         {bullet: "Bots", details: "2021 & 2023", sub_bullet: [
             "Developed a discord bot to interact with Amazon web services API to create a bot that provides basic text to speech",

@@ -13,7 +13,7 @@
     ]},
     {"path": ["~", "Apps"], "data": [
         {"name": "maze_maker.html", "type": "file"},
-        {"name": "cross_word_maker.html", "type": "file"},
+        {"name": "word_search_maker.html", "type": "file"},
         {"name": "word_randomizer.html", "type": "file"},
         {"name": "README.md", "type": "file"}
     ]},
